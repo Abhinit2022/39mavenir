@@ -1,7 +1,7 @@
 Observation (delete the Pods one by one (first voting Pod, then worker pod, then db pod) and see what happens to the voting and result app after deleting):
 -- Deleted the voting pod: voting pod auto created by deployment. voting and result app were working.
--- Deleted the worker pod: wworker pod auto created. voting and result app were working.
--- Deleted the db pod: voting pod auto created. voting and result app were reachable but data is not showing in result app. Also it was observed that worker pod restarted after db was restarted. 
+-- Deleted the worker pod: worker pod auto created. voting and result app were working.
+-- Deleted the db pod: DB Pod auto created. voting and result app were reachable but data is not showing in result app. Also it was observed that worker pod restarted after db was restarted. 
 result pod was restarted. voting and result app started working.
 
 3. your comment on WHY result app STOPPED working after db pod stop
